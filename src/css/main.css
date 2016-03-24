@@ -91,15 +91,21 @@ textarea {
 .menu{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /*background: #b3d4fc;*/
+    width: 20%;
+    background: #b3d4fc;
+    /*border-bottom: 1px black solid;*/
 }
 
 .menu-header{
     display: flex;
     color: cadetblue;
     align-items: center;
+    justify-content: center;
 
+}
+
+.menu-top{
+    border-bottom: 1px black solid;
 }
 /* ==========================================================================
    Search
@@ -108,11 +114,12 @@ textarea {
 .search {
     /* устанавливаем необходимую ширину формы в зависимости от дизайна
     ** форма без проблем растягивается */
-    width: 35%;
+    display: flex;
+    justify-content: center;
 
     /* кнопку отправки будем позиционировать абсолютно,
     ** поэтому необходимо это свойство */
-    position: relative;
+    /*position: relative;*/
 }
 
 .search input {
@@ -123,7 +130,7 @@ textarea {
 /* стили для поля ввода */
 .search .input {
     /* растягиваем поле ввода на всю ширину формы */
-    width: 100%;
+    width: 70%;
 
     /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
     ** регулируем высоту формы
@@ -186,11 +193,90 @@ input[type="search"] {
 /*================================================================================*/
 
 
+/* ==========================================================================
+   Top menu
+   ========================================================================== */
+
+.top-menu-block{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+
+}
+
+.top-menu:hover{
+    background-color: #49a;
+}
+
+.top-menu-link{
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+}
+
+.top-menu-link:hover{
+    color: #E8E8E8;
+}
+
+/*================================================================================*/
 
 
+/* ==========================================================================
+   Popular
+   ========================================================================== */
 
+.popular-block{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
 
+}
 
+.popular-block:hover{
+    background-color: #49a;
+}
+
+.popular-link{
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+}
+
+.popular-link:hover{
+    color: #E8E8E8;
+}
+
+/*================================================================================*/
+
+/* ==========================================================================
+   Bottom menu
+   ========================================================================== */
+.bottom-menu-block{
+    display: flex;
+    justify-content: center;
+
+}
+
+.bottom-menu-block:hover{
+    background-color: #49a;
+}
+
+.bottom-menu-link{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.bottom-menu-link:hover{
+    color: #E8E8E8;
+}
+
+.favorite-img{
+    justify-content: flex-start;
+}
+
+/*================================================================================*/
 
 
 /* ==========================================================================
