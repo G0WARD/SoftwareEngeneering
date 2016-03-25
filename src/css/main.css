@@ -93,6 +93,7 @@ textarea {
     flex-direction: column;
     width: 20%;
     background: #b3d4fc;
+
     /*border-bottom: 1px black solid;*/
 }
 
@@ -130,7 +131,7 @@ textarea {
 /* стили для поля ввода */
 .search .input {
     /* растягиваем поле ввода на всю ширину формы */
-    width: 70%;
+    width: 80%;
 
     /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
     ** регулируем высоту формы
@@ -164,15 +165,15 @@ textarea {
 /* оформляем кнопку отправки */
 .search .submit {
     /* позиционируем кнопку абсолютно от правого края формы */
-    position: absolute;
-    top: 0;
-    right: 0;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
 
     width: 37px;
 
     /* растягиваем кнопку на всю высоту формы */
-    height: 100%;
-
+    /*height: 100%;*/
+    outline: none;
     cursor: pointer;
     background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
 
@@ -204,7 +205,7 @@ input[type="search"] {
 
 }
 
-.top-menu:hover{
+.top-menu-block:hover{
     background-color: #49a;
 }
 
@@ -221,36 +222,28 @@ input[type="search"] {
 /*================================================================================*/
 
 
-/* ==========================================================================
-   Popular
-   ========================================================================== */
-
-.popular-block{
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-
-}
-
-.popular-block:hover{
-    background-color: #49a;
-}
-
-.popular-link{
-    font-size: 20px;
-    color: blue;
-    text-decoration: none;
-}
-
-.popular-link:hover{
-    color: #E8E8E8;
-}
-
-/*================================================================================*/
 
 /* ==========================================================================
    Bottom menu
    ========================================================================== */
+
+.menu-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bottom-button{
+    background-color: #4499aa;
+    border-radius: 20px;
+    justify-content: center;
+    /*border: none;*/
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    /*width: 70%;*/
+}
+
 .bottom-menu-block{
     display: flex;
     justify-content: center;
