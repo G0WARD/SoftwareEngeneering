@@ -9,6 +9,7 @@
    ========================================================================== */
 
 html {
+    background-color: black;
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -92,14 +93,15 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 20%;
-    background: #b3d4fc;
+    background: black;
 
     /*border-bottom: 1px black solid;*/
 }
 
 .menu-header{
+
     display: flex;
-    color: cadetblue;
+    color: white;
     align-items: center;
     justify-content: center;
 
@@ -211,7 +213,7 @@ input[type="search"] {
 
 .top-menu-link{
     font-size: 20px;
-    color: blue;
+    color: white;
     text-decoration: none;
 }
 
@@ -234,7 +236,7 @@ input[type="search"] {
 }
 
 .menu-bottom-button{
-    background-color: #4499aa;
+    background-color: red;
     border-radius: 20px;
     justify-content: center;
     /*border: none;*/
@@ -245,6 +247,7 @@ input[type="search"] {
 }
 
 .bottom-menu-block{
+    color: white;
     display: flex;
     justify-content: center;
 
@@ -256,7 +259,7 @@ input[type="search"] {
 
 .bottom-menu-link{
     text-decoration: none;
-    color: blue;
+    color: white;
     font-size: 20px;
     padding: 10px;
 }
@@ -439,4 +442,17 @@ input[type="search"] {
     h3 {
         page-break-after: avoid;
     }
+}
+.Player{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+ 
+.Playlist{
+    display: flex;
+    background-color: rgb(127,179,0);
+    width: 610px;
 }
